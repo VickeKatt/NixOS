@@ -3,11 +3,12 @@ function updateTime() {
     document.getElementById("datetime").textContent = datetime;
 }
 
+
 updateTime();
 setInterval(updateTime, 1000);
 
-dragElement(document.getElementById("window"));
 
+dragElement(document.getElementById("window"));
 function dragElement(element) {
     var initialX = 0, initialY = 0, currentX = 0, currentY = 0;
     if (document.getElementById(element.id + "header")) {
@@ -39,3 +40,29 @@ function dragElement(element) {
         document.onmousemove = null;
     }
 }
+
+
+var welcomeScreen = document.querySelector("#window");
+
+var welcomeScreenClose = document.querySelector("#welcomeclose");
+var welcomeScreenOpen = document.querySelector("#welcomeopen");
+
+
+function closeWindow(element) {
+    element.style.display = "none";
+}
+
+
+function openWindow(element) {
+    element.style.display = "block";
+}
+
+
+welcomeScreenClose.addEventListener("click", function() {
+    closeWindow(welcomeScreen);
+});
+
+
+welcomeScreenOpen.addEventListener("click", function() {
+    openWindow(welcomeScreen);
+});
