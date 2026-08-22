@@ -11,18 +11,56 @@
 <body>
 
     <div class="topbar">
-        <p id="welcomeopen">NexOS</p>
+        <p>NexOS</p>
         <p id="datetime"></p>
     </div>
 
-    <div class="welcome window" id="window">
-        <div id="windowheader">
+    <div class="welcome window" id="welcomewindow">
+
+        <div class="windowheader">
             <p>NexOS</p>
             <p id="welcomeclose">x</p>
         </div>
+
         <h1>WELCOME TO NEXOS!</h1>
-        <img src="./nexos_logo.png" alt="NexOS LOGO">
+
+        <img src="./NEXOS%20LOGOS/nexos_logo.png" alt="NexOS LOGO">
+
         <a href="https://github.com/VickeKatt/NexOS/">GitHub Repo</a>
+
+    </div>
+
+
+    <div class="terminal window" id="terminalwindow">
+
+        <div class="windowheader terminal-header">
+            <p>Terminal</p>
+            <p id="terminalclose">x</p>
+        </div>
+
+        <h1>Terminal</h1>
+
+    </div>
+
+    <div id="desktopApps">
+
+        <div id="terminal" class="desktop-app" onclick="handleIconTap(this)">
+
+            <img class="app-icons" src="./APP%20LOGOS/terminal.png" alt="Terminal">
+            <p class="app-texts">Terminal</p>
+
+        </div>
+
+        <br>
+
+        <div id="welcomeopen" class="desktop-app" onclick="handleIconTap(this)">
+
+            <img class="app-icons" src="./APP%20LOGOS/nexos_logo_small.png" alt="NexOS APP">
+
+            <p class="app-texts">NexOS APP</p>
+
+        </div>
+
     </div>
 
     <script src="./script.js"></script>
