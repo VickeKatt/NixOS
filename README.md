@@ -1,7 +1,7 @@
 # NexOS
 
 <p align="center">
-    <img src="./nexos_logo.png" width="400">
+    <img src="./NEXOS%20LOGOS/nexos_logo.png" width="400">
 </p>
 
 ## About
